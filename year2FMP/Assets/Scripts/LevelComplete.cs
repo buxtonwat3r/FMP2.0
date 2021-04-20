@@ -16,7 +16,7 @@ public class LevelComplete : MonoBehaviour
     {
         if (col.transform.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 }
