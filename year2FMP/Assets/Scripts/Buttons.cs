@@ -29,4 +29,14 @@ public class Buttons: MonoBehaviour
 
         SceneManager.LoadScene("mainmenu");
     }
+    public void Level2()
+    {
+
+        SceneManager.LoadScene("level2");
+    }
+    public void Level3()
+    {
+
+        SceneManager.LoadScene("level3");
+    }
 }
