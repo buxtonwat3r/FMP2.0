@@ -39,4 +39,35 @@ public class Buttons: MonoBehaviour
 
         SceneManager.LoadScene("level3");
     }
+    public void Level4()
+    {
+        SceneManager.LoadScene("Level4");
+    }
+
+    public void Level5()
+    {
+            SceneManager.LoadScene("Level5");
+    }
+    public void Level6()
+    {
+        SceneManager.LoadScene("Level6");
+    }
+    public void Level7()
+    {
+        SceneManager.LoadScene("Level7");
+    }
+    public void Level8()
+    {
+        SceneManager.LoadScene("Level8");
+    }
+    public void Level9()
+    {
+        SceneManager.LoadScene("Level9");
+
+    }
+    public void Level10()
+    {
+        SceneManager.LoadScene("Level510");
+    }
+
 }
