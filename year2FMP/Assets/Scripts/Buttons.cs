@@ -67,7 +67,7 @@ public class Buttons: MonoBehaviour
     }
     public void Level10()
     {
-        SceneManager.LoadScene("Level510");
+        SceneManager.LoadScene("Level10");
     }
 
 }
