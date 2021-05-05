@@ -66,12 +66,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level9.unity
     guid: d99c516776c159042bb0483cea3b4d97
   - enabled: 1
-    path: Assets/Scenes/LevelCompleteScenes/LevelComplete9.unity
-    guid: 6f526fb5ff6db9b4f978851a3ff1e3fd
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level10.unity
-    guid: 02b62269420cce24ea71db677064aa3a
-  - enabled: 1
     path: Assets/Scenes/LevelCompleteScenes/FinalLevelComplete.unity
     guid: 711e338f37d1234498a47ed400b0cfc4
+  - enabled: 1
+    path: Assets/Scenes/LevelCompleteScenes/LevelComplete9.unity
+    guid: 6f526fb5ff6db9b4f978851a3ff1e3fd
+  - enabled: 0
+    path: Assets/Scenes/Levels/Level10.unity
+    guid: 02b62269420cce24ea71db677064aa3a
   m_configObjects: {}

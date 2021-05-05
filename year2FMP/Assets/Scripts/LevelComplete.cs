@@ -10,12 +10,17 @@ public class LevelComplete : MonoBehaviour
 {
     [SerializeField] Transform spawnpoint;
     public int levelCompleteScene;
+    public int RequiredCoins;
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.transform.CompareTag("Player"))
         {
-            NextLevel();
+            if (ScoreManager.GetScore() >= RequiredCoins)
+            {
+                NextLevel();
+            }
+
         }
     }
 

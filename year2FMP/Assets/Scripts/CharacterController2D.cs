@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+    List<coin> collectedCoins;
+        
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -39,6 +42,8 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+        collectedCoins = new List<coin>();
 	}
 
 	private void FixedUpdate()
@@ -145,11 +150,33 @@ public class CharacterController2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
+
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.CompareTag("Collectables"))
 		{
-			Destroy(other.gameObject);
+            var coin = other.GetComponent<coin>();
+
+            if (coin == null)
+            {
+                Debug.Log("no coin script attached");
+                return;
+            }
+
+            if (coin.CollectableValue > 0)
+            {
+                collectedCoins.Add(coin);
+                other.gameObject.SetActive(false);
+            }
+            else
+            {
+                if (collectedCoins.Count < 1)
+                    return;
+
+                collectedCoins[collectedCoins.Count - 1].gameObject.SetActive(true);
+                collectedCoins.RemoveAt(collectedCoins.Count - 1);
+                Destroy(other.gameObject);
+            }
 		}
 	}
 }
