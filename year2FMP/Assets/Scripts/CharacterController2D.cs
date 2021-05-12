@@ -151,11 +151,11 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	private void OnTriggerEnter2D(Collider2D other)
+	private void OnTriggerEnter2D(Collider2D collider)
 	{
-		if (other.gameObject.CompareTag("Collectables"))
+		if (collider.gameObject.CompareTag("Collectables"))
 		{
-            var coin = other.GetComponent<coin>();
+            var coin = collider.GetComponent<coin>();
 
             if (coin == null)
             {
@@ -166,16 +166,18 @@ public class CharacterController2D : MonoBehaviour
             if (coin.CollectableValue > 0)
             {
                 collectedCoins.Add(coin);
-                other.gameObject.SetActive(false);
+                collider.gameObject.SetActive(false);
             }
             else
             {
                 if (collectedCoins.Count < 1)
+                {
                     return;
+                }
 
                 collectedCoins[collectedCoins.Count - 1].gameObject.SetActive(true);
                 collectedCoins.RemoveAt(collectedCoins.Count - 1);
-                Destroy(other.gameObject);
+                Destroy(collider.gameObject);
             }
 		}
 	}

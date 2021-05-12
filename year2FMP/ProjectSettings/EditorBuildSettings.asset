@@ -68,10 +68,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelCompleteScenes/FinalLevelComplete.unity
     guid: 711e338f37d1234498a47ed400b0cfc4
-  - enabled: 1
-    path: Assets/Scenes/LevelCompleteScenes/LevelComplete9.unity
-    guid: 6f526fb5ff6db9b4f978851a3ff1e3fd
   - enabled: 0
-    path: Assets/Scenes/Levels/Level10.unity
-    guid: 02b62269420cce24ea71db677064aa3a
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
