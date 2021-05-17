@@ -181,6 +181,6 @@ public class CharacterController2D : MonoBehaviour
 				FindObjectOfType<AudioManager>().Play("Damage");
                 Destroy(collider.gameObject);
             }
-		}
+		} 
 	}
 }

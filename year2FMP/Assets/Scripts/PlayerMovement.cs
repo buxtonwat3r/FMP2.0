@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
             //FindObjectOfType<AudioManager>().Play("PlayerJump");
             jump = true;
             animator.SetBool("IsJumping", true);
+            FindObjectOfType<AudioManager>().Play("Jump");
         }
 
 
