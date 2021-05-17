@@ -166,6 +166,7 @@ public class CharacterController2D : MonoBehaviour
             if (coin.CollectableValue > 0)
             {
                 collectedCoins.Add(coin);
+				FindObjectOfType<AudioManager>().Play("HealthGain");
                 collider.gameObject.SetActive(false);
             }
             else
@@ -177,6 +178,7 @@ public class CharacterController2D : MonoBehaviour
 
                 collectedCoins[collectedCoins.Count - 1].gameObject.SetActive(true);
                 collectedCoins.RemoveAt(collectedCoins.Count - 1);
+				FindObjectOfType<AudioManager>().Play("Damage");
                 Destroy(collider.gameObject);
             }
 		}
