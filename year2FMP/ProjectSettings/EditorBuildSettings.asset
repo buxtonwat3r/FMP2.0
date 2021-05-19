@@ -26,46 +26,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelCompleteScenes/LevelComplete2.unity
     guid: f5fd5d361019c3c429e3b355f3c96ee2
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level3.unity
-    guid: c44e8787b54ba4048943daed43d330fa
-  - enabled: 1
-    path: Assets/Scenes/LevelCompleteScenes/LevelComplete3.unity
-    guid: e1ffd5dacaf554d42a71eb5c7c69e0a4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Levels/Level4.unity
     guid: f66da8d7d42887d459ecafe282dc665e
   - enabled: 1
-    path: Assets/Scenes/LevelCompleteScenes/LevelComplete4.unity
-    guid: 5ff0e9c97dea3f848b422369e09e64e0
+    path: Assets/Scenes/LevelCompleteScenes/LevelComplete3.unity
+    guid: e1ffd5dacaf554d42a71eb5c7c69e0a4
   - enabled: 1
-    path: Assets/Scenes/Levels/Level5.unity
-    guid: 950d1332dad331544a5698e25dd39ae8
-  - enabled: 1
-    path: Assets/Scenes/LevelCompleteScenes/LevelComplete5.unity
-    guid: 82e2d464a73826340bfcdd10bafe211f
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level6.unity
+    path: Assets/Scenes/Levels/Level3.unity
     guid: c2c1da6c27a016d42ad4e9bb3b3ed796
   - enabled: 1
+    path: Assets/Scenes/LevelCompleteScenes/LevelComplete4.unity
+    guid: 5ff0e9c97dea3f848b422369e09e64e0
+  - enabled: 0
+    path: Assets/Scenes/Levels/Level5.unity
+    guid: 950d1332dad331544a5698e25dd39ae8
+  - enabled: 0
+    path: Assets/Scenes/LevelCompleteScenes/LevelComplete5.unity
+    guid: 82e2d464a73826340bfcdd10bafe211f
+  - enabled: 0
     path: Assets/Scenes/LevelCompleteScenes/LevelComplete6.unity
     guid: 9111517ec71c3344bbfc36145b42ced2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level7.unity
     guid: d2b7fe3181517574bb6951911c591fe9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LevelCompleteScenes/LevelComplete7.unity
     guid: 97c4c266c5541484a87626f0d08d9f80
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level8.unity
     guid: 36858e5b2bec61947add13360f1600eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LevelCompleteScenes/LevelComplete8.unity
     guid: 60c9792ed64120c409b5271e235db7aa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level9.unity
     guid: d99c516776c159042bb0483cea3b4d97
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LevelCompleteScenes/FinalLevelComplete.unity
     guid: 711e338f37d1234498a47ed400b0cfc4
   - enabled: 0
