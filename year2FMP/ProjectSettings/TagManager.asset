@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectables
+  - PowerUpSprint
+  - PowerUpJump
+  - PowerUpPhase
   layers:
   - Default
   - TransparentFX
