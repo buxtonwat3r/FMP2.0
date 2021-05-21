@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class CharacterController2D : MonoBehaviour
 {
+    public GameObject jumpUI;
+
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
@@ -206,7 +208,13 @@ public class CharacterController2D : MonoBehaviour
         if (collider.gameObject.CompareTag("PowerUpJump"))
         {
             PlayerMovement.collectPowerUpJump = true;
+            jumpUI.SetActive(true);
             collider.gameObject.SetActive(false);
         }
+    }
+    public void Close1Menu()
+    {
+        jumpUI.SetActive(false);
+
     }
 }

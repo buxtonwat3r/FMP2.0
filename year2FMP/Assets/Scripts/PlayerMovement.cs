@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
+    public GameObject sprintUI;
+    public GameObject jumpUI;
+    public GameObject phaseUI;
 
 
 
@@ -106,13 +109,26 @@ public class PlayerMovement : MonoBehaviour
         if (collider.gameObject.CompareTag("PowerUpSprint"))
         {
             collectPowerUpSprint = true;
+            sprintUI.SetActive(true);
             collider.gameObject.SetActive(false);
         }
 
         if (collider.gameObject.CompareTag("PowerUpPhase"))
         {
             collectPowerUpPhase = true;
+            phaseUI.SetActive(true);
             collider.gameObject.SetActive(false);
         }
+
+    }
+    public void Close1Menu()
+    {
+        sprintUI.SetActive(false);
+
+    }
+    public void Close3Menu()
+    {
+        phaseUI.SetActive(false);
     }
 }
+
