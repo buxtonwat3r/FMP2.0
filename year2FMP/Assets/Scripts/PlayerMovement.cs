@@ -68,12 +68,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if ((Input.GetKey(KeyCode.X)) && ((Input.GetKeyDown(KeyCode.RightArrow)) || (Input.GetKeyDown(KeyCode.D))))
             {
-                transform.position = new Vector4((transform.position.x + 1f), (transform.position.y), transform.position.z);
+                transform.position = new Vector4((transform.position.x + 1.5f), (transform.position.y), transform.position.z);
             }
 
             else if ((Input.GetKey(KeyCode.X)) && ((Input.GetKeyDown(KeyCode.LeftArrow)) || (Input.GetKeyDown(KeyCode.A))))
             {
-                transform.position = new Vector4((transform.position.x - 1f), (transform.position.y), transform.position.z);
+                transform.position = new Vector4((transform.position.x - 1.5f), (transform.position.y), transform.position.z);
             }
             Debug.Log(transform.position.x);
 
@@ -111,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
             collectPowerUpSprint = true;
             sprintUI.SetActive(true);
             collider.gameObject.SetActive(false);
+            Time.timeScale = 0f;
         }
 
         if (collider.gameObject.CompareTag("PowerUpPhase"))
@@ -118,17 +119,20 @@ public class PlayerMovement : MonoBehaviour
             collectPowerUpPhase = true;
             phaseUI.SetActive(true);
             collider.gameObject.SetActive(false);
+            Time.timeScale = 0f;
         }
 
     }
     public void Close1Menu()
     {
         sprintUI.SetActive(false);
+        Time.timeScale = 1f;
 
     }
     public void Close3Menu()
     {
         phaseUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
 

@@ -933,12 +933,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Damage
-    clip: {fileID: 8300000, guid: 3a6c3efa1dc19c946854bf158aa9214f, type: 3}
+    clip: {fileID: 8300000, guid: 1acd77c11be1a684ab51f47ed53c0599, type: 3}
     volume: 100
     pitch: 1.35
     source: {fileID: 0}
   - name: HealthGain
-    clip: {fileID: 8300000, guid: 2060b2f4b880c824c972717511aa8f53, type: 3}
+    clip: {fileID: 8300000, guid: 535acef30f21d034ab5268f9da7a7bab, type: 3}
     volume: 100
     pitch: 1.35
     source: {fileID: 0}
@@ -1452,6 +1452,9 @@ MonoBehaviour:
   controller: {fileID: 873308135}
   animator: {fileID: 873308129}
   runSpeed: 100
+  sprintUI: {fileID: 0}
+  jumpUI: {fileID: 0}
+  phaseUI: {fileID: 0}
 --- !u!58 &873308131
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1577,6 +1580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff00bb2d73973fb4daf43f81ee93eaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpUI: {fileID: 0}
   m_JumpForce: 800
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
@@ -2261,9 +2265,9 @@ RectTransform:
   m_Father: {fileID: 1325688184}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -837, y: 497}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 123, y: -43}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204219840

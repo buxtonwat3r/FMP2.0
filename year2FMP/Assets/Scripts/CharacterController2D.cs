@@ -62,11 +62,11 @@ public class CharacterController2D : MonoBehaviour
 
         else if (PlayerMovement.collectPowerUpJump == true)
         {
-            if (Input.GetKey(KeyCode.LeftControl))
+            if (Input.GetKey(KeyCode.C))
             {
                 jumpingHeight = 1.5f;
             }
-            else if (!Input.GetKey(KeyCode.LeftControl))
+            else if (!Input.GetKey(KeyCode.C))
             {
                 jumpingHeight = 1f;
             }
@@ -210,11 +210,13 @@ public class CharacterController2D : MonoBehaviour
             PlayerMovement.collectPowerUpJump = true;
             jumpUI.SetActive(true);
             collider.gameObject.SetActive(false);
+            Time.timeScale = 0f;
         }
     }
     public void Close1Menu()
     {
         jumpUI.SetActive(false);
+        Time.timeScale = 1f;
 
     }
 }
